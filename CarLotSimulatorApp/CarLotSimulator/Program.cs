@@ -11,7 +11,7 @@ namespace CarLotSimulator
             // and as you create a car add the car to the list.
             var list = new CarLot();
 
-            //TODO
+            //BOOM
 
             // DONE - Create a seperate class file called Car
             // DONE -Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
