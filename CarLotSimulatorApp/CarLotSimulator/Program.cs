@@ -32,6 +32,8 @@ namespace CarLotSimulator
             car1.HonkNoise = "Beep!";
             car1.isDriveable = true;
 
+            Console.WriteLine($"{CarLot.numberOfCars}");
+
             list.LotList.Add(car1);
 
             // Car #2 - Instantiation with Object Initializer Syntax
@@ -45,10 +47,14 @@ namespace CarLotSimulator
                 isDriveable = true
             };
 
+            Console.WriteLine($"{CarLot.numberOfCars}");
+
             list.LotList.Add(car2);
 
             // Car #3 - Instantiation with Constructor to allow values inside
             var car3 = new Car(1997, "Toyota", "Camry", "Sputter", "Peep", false);
+
+            Console.WriteLine($"{CarLot.numberOfCars}");
 
             // Add car to list
             list.LotList.Add(car3);
@@ -120,6 +126,10 @@ namespace CarLotSimulator
             {
                 Console.WriteLine($"Year: {car.Year} Make: {car.Make} Model: {car.Model}");
             }
+
+
+            Console.WriteLine("How many cars in the Car Lot?");
+            Console.WriteLine($"{CarLot.numberOfCars}");
         }
     }
 }

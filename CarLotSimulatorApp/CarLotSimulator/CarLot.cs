@@ -14,5 +14,6 @@ namespace CarLotSimulator
 
         public List<Car> LotList = new List<Car>();
 
+        public static int numberOfCars = 0;
     }
 }
